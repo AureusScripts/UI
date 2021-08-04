@@ -48,6 +48,7 @@ function library:createWindow(cfg,parent)
 	local windowInit = {}
 
 	local sgui = Instance.new('ScreenGui',parent)
+	syn.protect_gui(sgui)
 	sgui.Name = http:GenerateGUID(false)
 	sgui.IgnoreGuiInset = true
 	sgui.ZIndexBehavior = Enum.ZIndexBehavior.Global
